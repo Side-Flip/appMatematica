@@ -23,9 +23,10 @@
             transform: translate(300px, 100px);
         }
 
-        .calc_display{
+        #calc_display{
             height: 40px;
             margin: 5px;
+            text-align: right;
         }
 
         .table{
@@ -40,35 +41,35 @@
     </style>
     <body>
         <div class="calc">
-            <input type="number" name="display" class="calc_display">
+            <input type="text" id="calc_display" readonly>
             <div class="numeric_pad">
                 <table class="table">
                     <tr>
-                        <td colspan="2"><button type="button" class="btn btn-outline-danger" style='width: 90%;' id="btn-clear">Clear</button></td>
-                        <td><button type="button" class="btn btn-outline-warning">/</button></td>
-                        <td><button type="button" class="btn btn-outline-warning">x</button></td>
+                        <td colspan="2"><button type="button" class="btn btn-outline-danger" style='width: 90%;' value="clear">Clear</button></td>
+                        <td><button type="button" class="btn btn-outline-warning" value="/">&divide;</button></td>
+                        <td><button type="button" class="btn btn-outline-warning"value="*">*</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-outline-secondary">7</button></td>
-                        <td><button type="button" class="btn btn-outline-secondary">8</button></td>
-                        <td><button type="button" class="btn btn-outline-secondary">9</button></td>
-                        <td><button type="button" class="btn btn-outline-warning">-</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="7">7</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="8">8</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="9">9</button></td>
+                        <td><button type="button" class="btn btn-outline-warning" value="-">-</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-outline-secondary">4</button></td>
-                        <td><button type="button" class="btn btn-outline-secondary">5</button></td>
-                        <td><button type="button" class="btn btn-outline-secondary">6</button></td>
-                        <td><button type="button" class="btn btn-outline-warning">+</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="4">4</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="5">5</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="6">6</button></td>
+                        <td><button type="button" class="btn btn-outline-warning" value="+">+</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-outline-secondary">1</button></td>
-                        <td><button type="button" class="btn btn-outline-secondary">2</button></td>
-                        <td><button type="button" class="btn btn-outline-secondary">3</button></td>
-                        <td><button type="button" class="btn btn-outline-primary">Enter</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="1">1</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="2">2</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="3">3</button></td>
+                        <td><button type="button" class="btn btn-outline-primary" value="enter">Enter</button></td>
                     </tr>
                     <tr>
-                        <td><button type="button" class="btn btn-outline-secondary">0</button></td>
-                        <td><button type="button" class="btn btn-outline-secondary">.</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value="0">0</button></td>
+                        <td><button type="button" class="btn btn-outline-secondary" value=".">.</button></td>
                         <td></td>
                         <td></td>
                     </tr>
