@@ -6,6 +6,8 @@ const labels = "#inputLabels";
 const data = "#inputData";
 
 let grafica;
+var etiquetas;
+var datos;
 
 $(btn_barras).click(function (e) {
 
@@ -22,20 +24,21 @@ $(btn_lineas).click(function (e) {
 });
 
 $(btn_pizza).click(function (e) {
-
-    alert("toma tu dona UwU");
+    etiquetas = $(labels).val().split(","); 
+    datos = $(data).val().split(",");
+    graficar(datos, etiquetas, 'doughnut')
 });
 
-function detectDonut(data){
+// function detectDonut(data){
 
-    if(data[0].includes("%")){
-       return true;
-    }
+//     if(data[0].includes("%")){
+//        return true;
+//     }
 
-    else{
-        return false;
-    }
-}
+//     else{
+//         return false;
+//     }
+// }
 
 function graficar(datos, etiqueta, tipo){
 
